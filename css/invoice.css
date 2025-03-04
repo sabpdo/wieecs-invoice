@@ -139,7 +139,7 @@
     font-weight: 700;
     font-size: 44px;
     letter-spacing: 5px;
-    background: #248FA7;
+    background: #b2cace;
   }
 
   .title a {
@@ -152,7 +152,7 @@
 
   .black-bars {
     height: 50px;
-    background-color: #248FA7;
+    background-color: #7e84b7;
     width: 100%;
     margin: 0 auto;
   }
@@ -166,16 +166,16 @@
     height: 6px;
     background: linear-gradient(
       to right,
-      #B84444 0%,
-      #B84444 20%,
-      #248FA7 20%,
-      #248FA7 40%,
-      #3BBEF7 40%,
-      #3BBEF7 60%,
-      #94B352 60%,
-      #94B352 80%,
-      #FDDC70 80%,
-      #FDDC70 100%
+      #9c72a7 0%,
+      #9c72a7 20%,
+      #9c72a7 20%,
+      #9c72a7 40%,
+      #9c72a7 40%,
+      #9c72a7 60%,
+      #7f83b6 60%,
+      #7f83b6 80%,
+      #6590c1 80%,
+      #4e9aca 100%
     );
     margin: 5px 0 15px;
   }
