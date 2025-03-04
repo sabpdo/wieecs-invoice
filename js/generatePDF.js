@@ -48,7 +48,7 @@ window.onload = function () {
   var date = moment().format("MMMM D, YYYY");
   $(".date").text(date);
   document.title =
-    data.invoiceNum + "_" + data.tier + "_" + data.companyName + "-HackMIT";
+    data.invoiceNum + "_" + data.tier + "_" + data.companyName + "-WiEECS";
   var totalCost = 0;
   for (var i = 0; i < data.items.length; i++) {
     var itemJSON = data.items[i];

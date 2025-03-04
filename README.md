@@ -18,7 +18,7 @@ Clone the repo using `git clone https://github.com/womenineecs/invoice-generator
 **Generate the Invoice**
 
 To make an invoice, select fields in the top form section, then click "Generate PDF" to open the print preview. Save as PDF, then upload the invoice to Google Drive and send it off!
-- Make sure to select tier, and select HackMIT 2024 sponsor checkbox. Then it should all show up in generated PDF.
+- Make sure to select tier, and select WiEECS sponsor checkbox. Then it should all show up in generated PDF.
 
 ## Development
 Clone the repo. Change values in `main.js` and corresponding fields in `index.html`. Change styling to fit your needs. Note that this page uses print stylesheets to make the output PDF formatted correctly.
