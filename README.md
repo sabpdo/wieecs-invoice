@@ -24,3 +24,4 @@ To make an invoice, select fields in the top form section, then click "Generate 
 Clone the repo. Change values in `main.js` and corresponding fields in `index.html`. Change styling to fit your needs. Note that this page uses print stylesheets to make the output PDF formatted correctly.# wieecs-invoice
 # wieecs-invoice
 # wieecs-invoice
+# wieecs-invoice
