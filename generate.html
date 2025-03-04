@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>MIT Women in EECS 2025 Sponsorship Invoice</title>
+  <title>MIT Women in EECS {{ YEAR }} Sponsorship Invoice</title>
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -9,6 +9,7 @@
   <script src="js/jquery-2.2.4.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/moment.min.js"></script>
+  <script src="js/perks.js"></script>
 </head>
 
 <body>
@@ -23,16 +24,16 @@
     <div class="black-bars"></div>
     <div class="title">
       <a href="https://womenineecs.mit.edu/">
-        MIT Women in EECS <span class="year">2025</span>
+        MIT Women in EECS <span class="year">{{ YEAR }}</span>
       </a>
       <br>
     </div>
     <div class="invoice-container">
       <div class="header">
-        #<span class="invoice-num">25xx</span> //
-        <span class="date">June xx, 2025</span> //
+        <span class="invoice-num">{{ YEAR.slice(2) }}xx</span> //
+        <span class="date">June xx, {{ YEAR }}</span> //
         <span><span class="tier">Tier</span> Sponsorship Invoice</span> //
-        <span>WiEECS 2025</span>
+        <span>WiEECS {{ YEAR }}</span>
       </div>
 
       <div class="stripe"></div>
@@ -49,7 +50,7 @@
           </tr>
           <tr>
             <td class="tbl-label">DATE</td>
-            <td class="tbl-info"><span class="date">June xx, 2025</span></td>
+            <td class="tbl-info"><span class="date">June xx, {{ YEAR }}</span></td>
           </tr>
         </table>
         <table class="info-table right">
@@ -113,7 +114,7 @@
 
       <div class="end">
         <div class="thanks">
-          Thank you for sponsoring WiEECS 2025!
+          Thank you for sponsoring WiEECS {{ YEAR }}!
         </div>
       </div>
     </div>

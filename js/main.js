@@ -386,3 +386,7 @@ $(document).ready(function () {
     );
   });
 });
+
+$(document).ready(function () {
+  document.getElementById("title").innerHTML = "MIT Women in EECS " + YEAR;
+});
