@@ -19,7 +19,7 @@ function getUrlParam(parameter, defaultvalue) {
 
 /* ---------------- MAIN ------------------------------- */
 window.onload = function () {
-  document.date += $("hack-year").val();
+  document.date += $("wieecs-year").val();
   data = JSON.parse(decodeURIComponent(getUrlParam("data")));
   $("#invoice-space").height($("#editor").height() + 20); //add extra space for the editor div
   $(window).resize(function () {
