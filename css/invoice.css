@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "Heading";
+  letter-spacing: 0.1em;
+  src: url("../fonts/Quicksand-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "BodyFont";
+  font-weight: regular;
+  src: url("../fonts/Karla-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BigHeading";
+  letter-spacing: 0.15em;
+  src: url("../fonts/Quicksand-Bold.otf") format("opentype");
+}
+
+@media all {
+  body {
+    font-family: "BodyFont", sans-serif;
+    font-size: 14px;
+    color: #2c2f2d;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: #0F3D66;
+  }
+
+  li {
+    margin: 0;
+    padding: 0em;
+    line-height: 1.2em;
+  }
+
+  #editor {
+    margin: 20px;
+    padding: 10px;
+    width: calc(100% - 40px);
+    background-color: white;
+  }
+
+  #editor footer {
+    border: 1px solid black;
+  }
+  #editor footer button {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+
+  #editor p {
+    float: left;
+  }
+
+  #invoice-space {
+    width: 100%;
+    background-color: gray;
+  }
+
+  #invoice {
+    width: 1100px;
+    margin: auto;
+    background-color: white;
+  }
+
+  #jsontextarea {
+    min-height: 400px;
+    min-width: 400px;
+  }
+
+  .missing {
+    background-color: #248FA7;
+  }
+
+  .caps {
+    text-transform: uppercase;
+  }
+
+  .col-bg {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    padding: 5px;
+  }
+
+  .col {
+    display: inline-block;
+    width: 200px;
+    padding-right: 5em;
+    vertical-align: text-top;
+  }
+
+  .col-sm {
+    width: 150px;
+    text-align: right;
+  }
+
+  button {
+    height: 30px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  /* reset table css */
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: text-top;
+    background: transparent;
+    border-spacing: 0px;
+  }
+
+  .header {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    padding-left: 90px;
+    font-family: "BigHeading", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    letter-spacing: 5px;
+    background: #248FA7;
+  }
+
+  .title a {
+    color: #0F3D66;
+  }
+
+  .title .year {
+    color: #0F3D66;
+  }
+
+  .black-bars {
+    height: 50px;
+    background-color: #248FA7;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .invoice-container {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+
+  .stripe {
+    height: 6px;
+    background: linear-gradient(
+      to right,
+      #B84444 0%,
+      #B84444 20%,
+      #248FA7 20%,
+      #248FA7 40%,
+      #3BBEF7 40%,
+      #3BBEF7 60%,
+      #94B352 60%,
+      #94B352 80%,
+      #FDDC70 80%,
+      #FDDC70 100%
+    );
+    margin: 5px 0 15px;
+  }
+
+  td {
+    vertical-align: text-top;
+    line-height: 1.2em;
+  }
+
+  .info-table td {
+    padding-bottom: 12px;
+    vertical-align: text-top;
+  }
+
+  .tbl-label {
+    font-family: "Heading", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .tbl-info {
+    font-size: 18px;
+    padding-left: 36px;
+  }
+
+  .tbl-company tr td {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .info-table:not(.right) {
+    float: left;
+  }
+
+  .info-table.right {
+    float: right;
+  }
+
+  .details {
+    margin-top: 15px;
+    clear: both;
+  }
+  .details table {
+    width: 100%;
+  }
+
+  .details th,
+  .details td {
+    padding: 0 30px 0 0;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  .details th:first-child,
+  .details td:first-child {
+    width: 45px;
+  }
+
+  .details-label th {
+    border-bottom: 2px solid #dde3e5;
+  }
+
+  .details-info td {
+    padding: 10px 0;
+  }
+
+  .description {
+    min-height: 259px;
+    margin: 0px;
+    padding-left: 0px;
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+    padding-right: 50px;
+  }
+
+  .description li {
+    margin-top: 5px;
+    list-style-position: inside;
+  }
+
+  .total-due th {
+    width: 100px;
+  }
+
+  .total-due td,
+  .total-due th {
+    border-top: 2px dotted #dde3e5;
+    border-bottom: 2px solid #dde3e5;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+
+  .payment {
+    margin: 20px 0;
+  }
+
+  .payment th {
+    vertical-align: top;
+    padding: 0px;
+  }
+
+  .payment th.payment-heading {
+    width: 140px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .payment td.payment-addr {
+    width: 250px;
+    padding-right: 10px;
+  }
+
+  .payment td.payment-note {
+    width: 420px;
+    padding-right: 20px;
+  }
+
+  .address {
+    margin: 0px;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .important {
+    font-weight: 700;
+  }
+
+  .thanks {
+    margin-top: 15px;
+    margin-bottom: 14px;
+  }
+}
+
+@media print {
+  body {
+    margin: 0;
+    -webkit-print-color-adjust: exact;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  @page {
+    margin: 0;
+    size: A4 portrait;
+  }
+
+  #editor,
+  #invoice-space {
+    display: none;
+  }
+
+  #invoice {
+    width: 900px;
+    margin: 0;
+  }
+
+  .bottom {
+    position: fixed;
+    bottom: 0;
+  }
+}

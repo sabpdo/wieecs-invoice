@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>WiEECS 2025</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/invoice.css" />
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div id="editor">
+      <div id="editor-cont">
+        <div class="col">
+          Invoice #:
+          <input type="text" id="invoice-num-form" value="24xx" /><br />
+          PO #:
+          <input type="text" id="po-num-form" /><br />
+          Tier:
+          <select id="tier-form">
+            <option value=""></option>
+            <option value="Diamond">Diamond</option>
+            <option value="Platinum">Platinum</option>
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Bronze">Bronze</option>
+            <option value="Custom">Custom</option></select
+          ><br />
+          Deadline:
+          <input type="text" id="deadline-form" value="August 4, 2025" /><br />
+          Company name: <input type="text" id="company-name-form" /><br />
+          Company rep name: <input type="text" id="company-rep-form" /><br />
+          Company address: <input type="text" id="company-addr1-form" /><br />
+          Company rep email: <input type="text" id="company-addr2-form" /><br />
+
+          <div id="perks1"></div>
+        </div>
+        <div class="col" id="perks2"></div>
+        <div class="col" id="perks3"></div>
+        <textarea class="col" id="jsontextarea"></textarea>
+      </div>
+      <footer>
+        <p>
+          Don't forget to upload to save both JSON and PDF to
+          <a href="https://go.hackmit.org/invoice-folder" target="_blank"
+            >Google Drive</a
+          >!
+        </p>
+        <button id="pdf-button">Generate PDF</button>
+      </footer>
+    </div>
+  </body>
+</html>
