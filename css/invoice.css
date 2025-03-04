@@ -143,16 +143,16 @@
   }
 
   .title a {
-    color: #0F3D66;
+    color: #ffffff;
   }
 
   .title .year {
-    color: #0F3D66;
+    color: #e6eaed;
   }
 
   .black-bars {
     height: 50px;
-    background-color: #7e84b7;
+    background-color: #282d2e;
     width: 100%;
     margin: 0 auto;
   }
